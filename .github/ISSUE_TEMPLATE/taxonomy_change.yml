@@ -1,0 +1,24 @@
+﻿name: Taxonomy/IA Change
+description: Tag/structure navigation change for findability
+title: "[IA]: "
+labels: [information-architecture]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Findability problem
+      placeholder: What’s hard to find? Evidence/queries?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed taxonomy change
+      placeholder: New tags, sections, redirects, examples
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact analysis
+      placeholder: Content to migrate, redirects needed, risks

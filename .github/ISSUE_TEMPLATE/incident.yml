@@ -1,0 +1,27 @@
+﻿name: Content Incident
+description: Urgent doc/content error affecting players or agents
+title: "[Incident]: "
+labels: [incident, priority]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: What’s broken and who is impacted?
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Immediate mitigation
+      placeholder: Temporary steps to reduce harm/confusion
+  - type: textarea
+    id: fix
+    attributes:
+      label: Permanent fix
+      placeholder: What we’ll change and by when
+  - type: textarea
+    id: comms
+    attributes:
+      label: Comms
+      placeholder: Who to notify (players, agents, partners)

@@ -1,0 +1,24 @@
+﻿name: Design Decision (ADR link)
+description: Open an issue that will result in a recorded decision
+title: "[Decision]: "
+labels: [design-decision]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      placeholder: Why do we need a decision?
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      placeholder: Option A / B / C with pros/cons
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Proposed decision
+      placeholder: Draft decision; link final ADR when merged

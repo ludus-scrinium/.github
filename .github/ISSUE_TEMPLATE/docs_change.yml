@@ -1,0 +1,29 @@
+﻿name: KB Docs Change
+description: Update an existing knowledge article or doc
+title: "[Docs]: "
+labels: [doc]
+body:
+  - type: input
+    id: article
+    attributes:
+      label: Article/Page
+      placeholder: Link or path to the doc
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What to change
+      placeholder: Paste the old text and the new text
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why
+      placeholder: Source, policy, game change, analytics finding
+  - type: textarea
+    id: rollout
+    attributes:
+      label: Rollout
+      placeholder: Locale list, owner, date, comms needed

@@ -1,0 +1,29 @@
+﻿name: Feature Request
+description: Propose a new capability
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      placeholder: What user/job is blocked today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      placeholder: Brief solution and why it helps
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: Bullet list of outcomes/tests
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact & risks
+      placeholder: Who benefits, who’s affected, tradeoffs

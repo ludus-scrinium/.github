@@ -1,0 +1,28 @@
+﻿name: New KB Article Request
+description: Ask for a brand new knowledge article
+title: "[New Article]: "
+labels: [doc, content]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Proposed title
+    validations:
+      required: true
+  - type: textarea
+    id: outline
+    attributes:
+      label: Outline
+      placeholder: H1/H2 bullets or ARTICLE-OUTLINE-template
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      placeholder: Patch notes, SME notes, ticket links, analytics
+  - type: textarea
+    id: audiences
+    attributes:
+      label: Audience & intent
+      placeholder: Player support, internal agents, CS leadership, etc.
