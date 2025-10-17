@@ -1,0 +1,30 @@
+id: ""                # e.g., LS-W02-001
+title: ""             # e.g., PlayLens: demo surface (inventory-cut)
+owner: ""
+status: todo          # todo | doing | review | done | blocked
+priority: P3          # P0..P3
+labels: []            # ["playlens","unity","week-2"]
+
+when:
+  start: ""
+  due: ""
+
+context: ""           # 1–2 lines max
+
+acceptance:
+  - ""                # pass/fail checks
+  - ""
+
+dod:                  # Definition of Done (tight checklist)
+  - ""
+  - ""
+
+tasks:
+  - "- [ ] "          # keep as checklist lines
+  - "- [ ] "
+  - "- [ ] "
+
+links:
+  spec: ""
+  repo: ""
+  assets: []
