@@ -1,15 +1,10 @@
-name: "Task"
-description: "Tiny task/issue form for ludus scrinium."
-title: "[LS] <short title>"
+name: "Issue"
+description: "Issue form for ludus scrinium."
+title: "Task:"
 labels: ["task"]
 assignees: []
 
 body:
-  - type: input
-    id: id
-    attributes:
-      label: ID
-      placeholder: "LS-W02-001"
   - type: input
     id: owner
     attributes:
@@ -21,12 +16,6 @@ body:
       label: Priority
       options: ["P0","P1","P2","P3"]
       default: 2
-  - type: dropdown
-    id: status
-    attributes:
-      label: Status
-      options: ["todo","doing","review","done","blocked"]
-      default: 0
   - type: input
     id: start
     attributes:
@@ -38,22 +27,6 @@ body:
       label: Due
       placeholder: "YYYY-MM-DD"
 
-  - type: textarea
-    id: context
-    attributes:
-      label: Context (1–2 lines)
-      placeholder: "Why this matters right now."
-    validations:
-      required: false
-
-  - type: textarea
-    id: acceptance
-    attributes:
-      label: Acceptance (pass/fail checks)
-      description: "Each item should be objectively testable."
-      value: |
-        - [ ] 
-        - [ ] 
 
   - type: textarea
     id: dod
