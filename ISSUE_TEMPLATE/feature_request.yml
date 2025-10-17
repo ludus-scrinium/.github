@@ -1,0 +1,12 @@
+﻿name: Feature request
+description: Propose a small, shippable improvement
+labels: ["type/feature"]
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: What pain are we addressing?
+  - type: textarea
+    attributes:
+      label: Proposal
+      description: What’s the smallest useful change?
