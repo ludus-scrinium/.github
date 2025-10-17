@@ -1,29 +1,12 @@
-﻿## Summary
-One-line description of the change.
+﻿## What
+- One-liner
 
 ## Why
-Link the issue or describe the problem.
+- Outcome it supports
 
-## What changed
-- Bullet list of key edits
-- Screenshots or 30–90s clip if UI/UX
-
-## KB impact
-- [ ] New article
-- [ ] Update existing article(s)
-- [ ] No KB changes
-
-## Localization
-- [ ] Strings changed (link CSV/JSON)
-- [ ] Glossary touched (list terms)
-- [ ] No l10n impact
-
-## Testing
-- Steps to validate
-- Expected vs. actual
+## Evidence
+- Before/after notes, clip link, or screenshot
 
 ## Checklist
-- [ ] Linked issue(s)
-- [ ] Docs updated
-- [ ] Passing checks
-- [ ] ADR/RFC updated if decision affected
+- [ ] README/docs updated if needed
+- [ ] Demo clip or screenshot added (if applicable)
