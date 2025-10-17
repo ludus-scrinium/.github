@@ -1,5 +1,5 @@
-name: "LS Task (short)"
-description: "Tiny task/issue form for Ludus Scrinium."
+name: "Task"
+description: "Tiny task/issue form for ludus scrinium."
 title: "[LS] <short title>"
 labels: ["task"]
 assignees: []
