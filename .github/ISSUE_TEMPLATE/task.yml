@@ -1,0 +1,84 @@
+name: "LS Task (short)"
+description: "Tiny task/issue form for Ludus Scrinium."
+title: "[LS] <short title>"
+labels: ["task"]
+assignees: []
+
+body:
+  - type: input
+    id: id
+    attributes:
+      label: ID
+      placeholder: "LS-W02-001"
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      placeholder: "kaosi"
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options: ["P0","P1","P2","P3"]
+      default: 2
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options: ["todo","doing","review","done","blocked"]
+      default: 0
+  - type: input
+    id: start
+    attributes:
+      label: Start
+      placeholder: "YYYY-MM-DD"
+  - type: input
+    id: due
+    attributes:
+      label: Due
+      placeholder: "YYYY-MM-DD"
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (1–2 lines)
+      placeholder: "Why this matters right now."
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance (pass/fail checks)
+      description: "Each item should be objectively testable."
+      value: |
+        - [ ] 
+        - [ ] 
+
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done (tight checklist)
+      value: |
+        - [ ] 
+        - [ ] 
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks (keep it short)
+      value: |
+        - [ ] 
+        - [ ] 
+        - [ ] 
+
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: "Spec, repo, assets, etc."
+      value: |
+        Spec: 
+        Repo: 
+        Assets:
+          - 
