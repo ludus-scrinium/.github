@@ -1,0 +1,71 @@
+name: "General Task"
+description: "Standard template for any Ludus Scrinium task, issue, or deliverable."
+title: "[Task] <short descriptive title>"
+labels: ["task"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Goal / Purpose
+        State what this task exists to accomplish and why it matters in context.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Task Details"
+      description: "Summarize what needs to be built, written, researched, or resolved."
+      placeholder: |
+        Describe the scope of work and the intended outcome.
+        Include any background context, references, or decisions already made.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: dod
+    attributes:
+      label: "Definition of Done"
+      description: "What must be true for this task to be considered complete."
+      options:
+        - label: "Meets stated goal or resolves described issue"
+        - label: "Reviewed or tested where applicable"
+        - label: "Documentation or notes updated"
+        - label: "Merged, published, or shared as needed"
+
+  - type: input
+    id: effort
+    attributes:
+      label: "Estimated Effort"
+      placeholder: "e.g., 1 day, 3 days, 1 week"
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: "Status"
+      options:
+        - Backlog
+        - In Progress
+        - Review
+        - Done
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance Criteria"
+      description: "How a reviewer or teammate can verify that this task is complete."
+      placeholder: |
+        - Outcome matches expectations or fixes the issue
+        - Functionality or content behaves as intended
+        - Any relevant links, artifacts, or data are attached
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notes / Links"
+      description: "Reference files, paths, or related discussions."
+      placeholder: |
+        - /docs/<filename>.md
+        - /design/<asset>.png
+        - /scripts/<file>.ps1
+        - Related issue: #123
